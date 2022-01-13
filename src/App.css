@@ -15,9 +15,10 @@ img {
 }
 
 h1 {
-  font-family:'SNES Italic';
+  font-family:'SNES';
   color: red;
   position: justify center;
+  font-size: 56px;
 }
 
 h2 {
@@ -32,7 +33,7 @@ h3 {
   color: black;
 }
 
-p {
+.p {
   font-family: 'Roboto Slab', serif;
   color: black;
 }

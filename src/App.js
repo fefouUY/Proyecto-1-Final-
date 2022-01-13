@@ -1,21 +1,21 @@
-import './App.css';
+import "./index.css";
+import "./App.css";
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {Analisis,Footer,Navigation,Home,Historia,} from './components';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Snesretrouy</h1>
-        <nav>
-            <ul id="main-nav" class="navegación"></ul>
-            <li><a href="Analisis">Analisis</a></li>
-            <li><a href="Login.html">Ingresar</a></li>
-            <li><a href="Historia.html">Historia</a></li>
-            <li><a href="contactos.html">Contacto</a></li>
-            <li><a href="carrito.html">Carrito</a></li>
-        </nav>
-    </header>
+      <Router>
+        <Navigation />
+        <Switch>
+          <Route path="/" exact component={() => <Home />}/>
+          <Route path="/Analisis" exact component={() => <Analisis />}/>
+          <Route path="/Historia" exact component={() => <Historia />}/>
+        </Switch>
+        <Footer />
+      </Router>
     </div>  
   );
-}
-
-export default App;
+}export default App;

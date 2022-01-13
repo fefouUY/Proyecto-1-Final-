@@ -14,9 +14,10 @@ img {
 }
 
 h1 {
-  font-family:'SNES Italic';
+  font-family:'SNES';
   color: red;
   font-style: justify;
+  font: size 32px;
 }
 
 h2 {
