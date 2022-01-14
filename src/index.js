@@ -1,9 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import "./index.css";
 import "./App.css";
+import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import {Analisis,Footer,Navigation,Historia,} from "./components";
+import Navigation from "./components/Navigation";
+import Historia from "./components/Historia";
+import Analisis from "./components/Analisis";
+import Footer from "./components/Footer";
 
 
 ReactDOM.render(
@@ -15,6 +18,6 @@ ReactDOM.render(
     </Routes>
     <Footer />
   </Router>,
-
-  document.getElementById("root")
+document.getElementById("root")
 );
+
