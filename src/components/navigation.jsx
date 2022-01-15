@@ -1,37 +1,22 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navigation() {
   return (
     <div className="Navigation">
-      <nav className="navbar navbar-expand navbar-dark bg-dark">
-        <div className="container">
-          <NavLink className="navbar-brand" to="/">
-            Snesretrouy
-          </NavLink>
-          <div>
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/">
-                  Home
-                  <span className="sr-only">(current)</span>
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/analisis">
-                  Analisis
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/historia">
-                  Historia
-                </NavLink>
-              </li>
-            </ul>
-          </div>
+      <h1>Snesretrouy</h1>
+             <nav>
+            <ul id="main-nav" class="Navegation"></ul>
+            <li>
+            <Link to='/Home' >Home</Link>
+            <Link to='/Analisis' >Analisis</Link>
+            <Link to='/Login' >Ingresar</Link>
+            <Link to='/Historia' >Historia</Link>
+            <Link to='/Carrito' >Carrito</Link>
+            <Link to='/Contactos' >Contacto</Link>
+            </li>
+        </nav>
         </div>
-      </nav>
-    </div>
   );
 }
 
