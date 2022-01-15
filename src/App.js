@@ -6,6 +6,7 @@ import Navigation from "./components/Navigation";
 import Home from "./components/Home";
 import Historia from "./components/Historia";
 import Analisis from "./components/Analisis";
+import LoginForm from "./components/LoginForm";
 import Contactos from "./components/Contactos";
 import Footer from "./components/Footer";
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/Home" exact component={() => <Home />}/>
           <Route path="/Analisis" exact component={() => <Analisis />}/>
           <Route path="/Contactos" exact component={() => <Contactos />}/>
+          <Route path="/LoginForm" exact component={() => <LoginForm />}/>
           <Route path="/Historia" exact component={() => <Historia />}/>
         </Switch>
         <Footer />

@@ -7,6 +7,7 @@ import Navigation from "./components/Navigation";
 import Home from "./components/Home";
 import Historia from "./components/Historia";
 import Analisis from "./components/Analisis";
+import LoginForm from "./components/LoginForm";
 import Contactos from "./components/Contactos";
 import Footer from "./components/Footer";
 
@@ -17,8 +18,9 @@ ReactDOM.render(
     <Routes>
     <Route path="/Home" element={<Home />} />
       <Route path="/Historia" element={<Historia />} />
-      <Route path="/Contactos" element={<Contactos />} />
       <Route path="/Analisis" element={<Analisis/>} />
+      <Route path="/LoginForm" element={<LoginForm/>} />
+      <Route path="/Contactos" element={<Contactos />} />
     </Routes>
     <Footer />
   </Router>,

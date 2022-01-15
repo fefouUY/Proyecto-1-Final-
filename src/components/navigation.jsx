@@ -10,7 +10,7 @@ function Navigation() {
             <li>
             <Link to='/Home' >Home</Link>
             <Link to='/Analisis' >Analisis</Link>
-            <Link to='/Login' >Ingresar</Link>
+            <Link to='/LoginForm' >Ingresar</Link>
             <Link to='/Historia' >Historia</Link>
             <Link to='/Carrito' >Carrito</Link>
             <Link to='/Contactos' >Contacto</Link>
