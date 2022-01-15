@@ -78,7 +78,14 @@ a {
   font-size: 14px;
 }
 
-#socials {
+ul.socials{
+position: absolute;
+bottom: 0;
+width: 100%;
+
+
+}
+.socials {
   list-style: none;
   display: flex;
   align-items: center;
@@ -86,14 +93,6 @@ a {
   margin: 1rem 0 3rem 0;
 }
 
-.socials li {
-  margin: 0 10px;
-}
-
-.socials a {
-  text-decoration: none;
-  color: white;
-}
 
 .footer-bottom {
   background-color: red;

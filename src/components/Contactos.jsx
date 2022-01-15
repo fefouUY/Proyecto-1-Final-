@@ -3,7 +3,6 @@ import React from "react";
 function Contactos (){
     return(
         <div className="Contactos">
-            <header>
                 <h1>Contacto</h1>
                 <form onsubmit="return false"></form>
                 <input type="text" placeholder="Ingresa tu nombre" id="Nombre" />
@@ -29,7 +28,6 @@ function Contactos (){
                 <br/>
                 <textarea id="question" rows="5"></textarea>
                 <button onclick="sendContact();">Enviar</button>
-            </header>
         </div>
   );
 }

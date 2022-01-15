@@ -1,15 +1,27 @@
-import React from "react";
+import React from 'react';
 
-
-export default function Login() {
+function Login() {
     return (
-        <articule>
-            <h1>Login</h1>
-            <form method="POST" action="javascript:void(0);"> /</form>
-                <input id="mail" type="email" name="mail" placeholder="Ingrese su correo"></input>
-                <id id="password" type="text" name="password" placeholder="Ingrese su contraseña"></id>
-                <button id="login">Login!</button>
-            <form/>
-        </articule>
+        <form>
+            <div className="form-inner">
+                <h2>Ingresar</h2>
+                {/*ERROR! */}
+            <div className="form-group">
+                <label htmlFor="name">Nombre:</label>
+                <input type="text" Name="name" id="name"/>
+            </div>
+            <div className="form-group">
+                <label htmlFor="email">Email: </label>
+                <input type="email" Name="email" id="email"/>
+            </div>
+            < div className="form-group">
+                <label htmlFor="password">Contraseña:</label>
+                <input type="password" name="password" id="password"/> 
+            </div>
+        </div>
+    </form>   
     )
 }
+
+export default Login;
+
