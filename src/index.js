@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 import "./App.css";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Home from "./components/Home";
@@ -11,22 +11,21 @@ import LoginForm from "./components/LoginForm";
 import Contactos from "./components/Contactos";
 import Footer from "./components/Footer";
 
-
-ReactDOM.render(
+const root = createRoot(document.getElementById("root"));
+root.render(
   <Router>
     <Navigation />
     <Routes>
-    <Route path="/Home" element={<Home />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/Home" element={<Home />} />
       <Route path="/Historia" element={<Historia />} />
-      <Route path="/Analisis" element={<Analisis/>} />
-      <Route path="/LoginForm" element={<LoginForm/>} />
+      <Route path="/Analisis" element={<Analisis />} />
+      <Route path="/LoginForm" element={<LoginForm />} />
       <Route path="/Contactos" element={<Contactos />} />
+      <Route path="*" element={<div>404 - Página no encontrada</div>} />
     </Routes>
     <Footer />
-  </Router>,
-  document.getElementById("root")
+  </Router>
 );
-
-
 
 
