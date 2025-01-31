@@ -1,9 +1,10 @@
 import React from "react";
+import Vite from 'vite';
 import "./index.css";
 import "./App.css";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navigation from "./components/Navigation";
+import Navigation from "./components/navigation";
 import Home from "./components/Home";
 import Historia from "./components/Historia";
 import Analisis from "./components/Analisis";

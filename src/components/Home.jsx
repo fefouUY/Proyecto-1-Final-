@@ -1,5 +1,5 @@
 import React from "react";
-
+import Vite from "vite";
 function Home() {
   return (
     <div className="Home">

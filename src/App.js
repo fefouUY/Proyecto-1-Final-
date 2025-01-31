@@ -1,8 +1,9 @@
 import React from 'react';
+import Vite from 'vite';
 import "./App.css";
 import "./index.css";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navigation from "./components/Navigation";
+import Navigation from "./components/navigation";
 import Home from "./components/Home";
 import Historia from "./components/Historia";
 import Analisis from "./components/Analisis";

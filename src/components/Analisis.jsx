@@ -1,4 +1,5 @@
 import React from "react";
+import Vite from 'vite';
 
 function Analisis (){
     return(
